@@ -1,0 +1,252 @@
+[
+  {
+    "region": "Vinnytsia Oblast",
+    "Year": 2019,
+    "agri_spec_grp": "24,50%",
+    "mining_spec_grp": "1,20%",
+    "posl_spec_grp": "15,80%",
+    "industry_spec_grp": "17,00%",
+    "other_spec_grp": "41,50%",
+    "GRP": 129097
+  },
+  {
+    "region": "Volyn Oblast",
+    "Year": 2019,
+    "agri_spec_grp": "13,90%",
+    "mining_spec_grp": "0,10%",
+    "posl_spec_grp": "13,00%",
+    "industry_spec_grp": "13,10%",
+    "other_spec_grp": "59,90%",
+    "GRP": 75620
+  },
+  {
+    "region": "Dnipropetrovsk Oblast",
+    "Year": 2019,
+    "agri_spec_grp": "6,70%",
+    "mining_spec_grp": "20,70%",
+    "posl_spec_grp": "20,00%",
+    "industry_spec_grp": "40,70%",
+    "other_spec_grp": "11,90%",
+    "GRP": 390342
+  },
+  {
+    "region": "Donetsk Oblast",
+    "Year": 2019,
+    "agri_spec_grp": "6,20%",
+    "mining_spec_grp": "21,60%",
+    "posl_spec_grp": "23,40%",
+    "industry_spec_grp": "45,00%",
+    "other_spec_grp": "3,80%",
+    "GRP": 204893
+  },
+  {
+    "region": "Zhytomyr Oblast",
+    "Year": 2019,
+    "agri_spec_grp": "20,60%",
+    "mining_spec_grp": "4,70%",
+    "posl_spec_grp": "11,50%",
+    "industry_spec_grp": "16,20%",
+    "other_spec_grp": "47,00%",
+    "GRP": 85267
+  },
+  {
+    "region": "Zakarpattia Oblast",
+    "Year": 2019,
+    "agri_spec_grp": "13,90%",
+    "mining_spec_grp": "0,60%",
+    "posl_spec_grp": "9,10%",
+    "industry_spec_grp": "9,70%",
+    "other_spec_grp": "66,70%",
+    "GRP": 61325
+  },
+  {
+    "region": "Zaporizhzhia Oblast",
+    "Year": 2019,
+    "agri_spec_grp": "10,20%",
+    "mining_spec_grp": "3,00%",
+    "posl_spec_grp": "26,40%",
+    "industry_spec_grp": "29,40%",
+    "other_spec_grp": "31,00%",
+    "GRP": 155158
+  },
+  {
+    "region": "Ivano-Frankivsk Oblast",
+    "Year": 2019,
+    "agri_spec_grp": "12,40%",
+    "mining_spec_grp": "8,60%",
+    "posl_spec_grp": "12,70%",
+    "industry_spec_grp": "21,30%",
+    "other_spec_grp": "45,00%",
+    "GRP": 86679
+  },
+  {
+    "region": "Kyiv Oblast",
+    "Year": 2019,
+    "agri_spec_grp": "12,00%",
+    "mining_spec_grp": "0,40%",
+    "posl_spec_grp": "20,30%",
+    "industry_spec_grp": "25,60%",
+    "other_spec_grp": "41,70%",
+    "GRP": 104452
+  },
+  {
+    "region": "Kirovohrad Oblast",
+    "Year": 2019,
+    "agri_spec_grp": "29,20%",
+    "mining_spec_grp": "5,10%",
+    "posl_spec_grp": "11,00%",
+    "industry_spec_grp": "16,10%",
+    "other_spec_grp": "38,60%",
+    "GRP": 73066
+  },
+  {
+    "region": "Luhansk Oblast",
+    "Year": 2019,
+    "agri_spec_grp": "19,60%",
+    "mining_spec_grp": "1,90%",
+    "posl_spec_grp": "9,40%",
+    "industry_spec_grp": "11,30%",
+    "other_spec_grp": "57,80%",
+    "GRP": 40291
+  },
+  {
+    "region": "Lviv Oblast",
+    "Year": 2019,
+    "agri_spec_grp": "8,00%",
+    "mining_spec_grp": "5,50%",
+    "posl_spec_grp": "11,50%",
+    "industry_spec_grp": "17,00%",
+    "other_spec_grp": "58,00%",
+    "GRP": 214400
+  },
+  {
+    "region": "Mykolaiv Oblast",
+    "Year": 2019,
+    "agri_spec_grp": "18,20%",
+    "mining_spec_grp": "0,70%",
+    "posl_spec_grp": "13,10%",
+    "industry_spec_grp": "13,80%",
+    "other_spec_grp": "54,20%",
+    "GRP": 92427
+  },
+  {
+    "region": "Odesa Oblast",
+    "Year": 2019,
+    "agri_spec_grp": "8,40%",
+    "mining_spec_grp": "0,00%",
+    "posl_spec_grp": "9,60%",
+    "industry_spec_grp": "9,60%",
+    "other_spec_grp": "72,40%",
+    "GRP": 197153
+  },
+  {
+    "region": "Poltava Oblast",
+    "Year": 2019,
+    "agri_spec_grp": "14,40%",
+    "mining_spec_grp": "31,90%",
+    "posl_spec_grp": "9,00%",
+    "industry_spec_grp": "42,00%",
+    "other_spec_grp": "2,70%",
+    "GRP": 187289
+  },
+  {
+    "region": "Rivne Oblast",
+    "Year": 2019,
+    "agri_spec_grp": "17,00%",
+    "mining_spec_grp": "1,80%",
+    "posl_spec_grp": "12,40%",
+    "industry_spec_grp": "14,20%",
+    "other_spec_grp": "54,60%",
+    "GRP": 67363
+  },
+  {
+    "region": "Sumy Oblast",
+    "Year": 2019,
+    "agri_spec_grp": "22,80%",
+    "mining_spec_grp": "7,40%",
+    "posl_spec_grp": "13,50%",
+    "industry_spec_grp": "20,90%",
+    "other_spec_grp": "35,40%",
+    "GRP": 75827
+  },
+  {
+    "region": "Ternopil Oblast",
+    "Year": 2019,
+    "agri_spec_grp": "22,40%",
+    "mining_spec_grp": "1,40%",
+    "posl_spec_grp": "10,00%",
+    "industry_spec_grp": "11,40%",
+    "other_spec_grp": "54,80%",
+    "GRP": 57140
+  },
+  {
+    "region": "Kharkiv Oblast",
+    "Year": 2019,
+    "agri_spec_grp": "9,40%",
+    "mining_spec_grp": "11,90%",
+    "posl_spec_grp": "12,40%",
+    "industry_spec_grp": "24,30%",
+    "other_spec_grp": "42,00%",
+    "GRP": 247596
+  },
+  {
+    "region": "Kherson Oblast",
+    "Year": 2019,
+    "agri_spec_grp": "26,90%",
+    "mining_spec_grp": "0,30%",
+    "posl_spec_grp": "10,20%",
+    "industry_spec_grp": "10,50%",
+    "other_spec_grp": "52,10%",
+    "GRP": 61939
+  },
+  {
+    "region": "Khmelnytskyi Oblast",
+    "Year": 2019,
+    "agri_spec_grp": "25,40%",
+    "mining_spec_grp": "0,80%",
+    "posl_spec_grp": "10,40%",
+    "industry_spec_grp": "11,20%",
+    "other_spec_grp": "52,20%",
+    "GRP": 83006
+  },
+  {
+    "region": "Cherkasy Oblast",
+    "Year": 2019,
+    "agri_spec_grp": "20,00%",
+    "mining_spec_grp": "0,60%",
+    "posl_spec_grp": "19,80%",
+    "industry_spec_grp": "20,40%",
+    "other_spec_grp": "39,20%",
+    "GRP": 103466
+  },
+  {
+    "region": "Chernivtsi Oblast",
+    "Year": 2019,
+    "agri_spec_grp": "18,00%",
+    "mining_spec_grp": "0,40%",
+    "posl_spec_grp": "6,10%",
+    "industry_spec_grp": "6,50%",
+    "other_spec_grp": "69,00%",
+    "GRP": 41660
+  },
+  {
+    "region": "Chernihiv Oblast",
+    "Year": 2019,
+    "agri_spec_grp": "24,20%",
+    "mining_spec_grp": "4,20%",
+    "posl_spec_grp": "12,10%",
+    "industry_spec_grp": "16,30%",
+    "other_spec_grp": "43,20%",
+    "GRP": 77981
+  },
+  {
+    "region": "Kyiv",
+    "Year": 2019,
+    "agri_spec_grp": "0,00%",
+    "mining_spec_grp": "0,00%",
+    "posl_spec_grp": "5,50%",
+    "industry_spec_grp": "5,50%",
+    "other_spec_grp": "89,00%",
+    "GRP": 949566
+  }
+]
