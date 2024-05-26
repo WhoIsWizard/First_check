@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics</title>
+    <link rel="stylesheet" href="stats.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="wrap-logo">
+            <img src="pictures/main.png" alt="Company Logo" width="75" height="auto" class="logo">
+            <span class="site-title">Ukrainian <br> Economic</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Головна</a>
+            <a href="interestings.html">Цікавинки</a>
+            <a href="regionsanalys.html">Про області</a>
+            <a href="stats.html">Статистика</a>
+        </nav>
+    </header>
+
+
+
+    <div>
+        <h1>Аналіз регіональної сільськогосподарської та економічної діяльності</h1>
+
+        <p>Дані, представлені на цих діаграмах, надають всебічний огляд сільськогосподарського виробництва та валового регіонального продукту (ВРП) у різних областях України.</p>
+
+        <h2>Сільськогосподарське виробництво по областях</li></h2>
+        <p>Ліва діаграма ілюструє сільськогосподарську продуктивність, виміряну в невизначених одиницях, для кожного регіону. Зокрема, Вінницька та Полтавська області лідирують за рівнем сільськогосподарського виробництва, що відображає їхні великі фермерські господарства та родючі землі. Регіони, такі як Київ та Львів, також демонструють значний внесок, що свідчить про їхні різноманітні сільськогосподарські можливості.</p>
+        
+        <h2>Валовий регіональний продукт (ВРП) по областях</h2>
+        <p>Права діаграма відображає валовий регіональний продукт (ВРП) для кожної області, що вказує на економічну силу та промисловий потенціал регіонів. Київ виділяється надзвичайно високим ВРП, що підкреслює його роль економічного центру України. Інші помітні регіони включають Дніпропетровськ та Харків, які також демонструють сильні економічні показники.</p>
+
+        <h2>Сільськогосподарське виробництво по областях</h2>
+
+        <p>
+            <li>Сільськогосподарські центри: Дані виділяють ключові сільськогосподарські регіони, які можна розглядати як ціль для інвестицій та розвитку з метою підвищення загальної продуктивності.</li>
+            <li>Економічні нерівності: Значна різниця у ВРП між Києвом та іншими регіонами свідчить про централізацію економічної діяльності в столиці, що вказує на потенційні області для економічної децентралізації та розвитку.</li>
+            <li>Розробка політики: Ці висновки можуть направити політиків у розробці регіональних стратегій, спрямованих на підвищення як сільськогосподарського, так і економічного виробництва, забезпечуючи збалансований регіональний розвиток по всій Україні.</li>
+        </p>
+
+        <blockquote>
+            Цей аналіз служить важливим інструментом для розуміння поточної економічної ситуації та спрямування майбутніх ініціатив для сталого зростання.
+        </blockquote>
+
+        
+    </div>
+
+
+
+    <div class="chart-container1">
+        <canvas id="myChart1"></canvas>
+    </div>
+
+
+    <div>
+    <script>
+        const data1 = {
+            labels: [
+                'Vinnytsia Oblast', 'Volyn Oblast', 'Dnipropetrovsk Oblast', 'Donetsk Oblast', 
+                'Zhytomyr Oblast', 'Zakarpattia Oblast', 'Zaporizhzhia Oblast', 'Ivano-Frankivsk Oblast', 
+                'Kyiv Oblast', 'Kirovohrad Oblast', 'Luhansk Oblast', 'Lviv Oblast', 
+                'Mykolaiv Oblast', 'Odesa Oblast', 'Poltava Oblast', 'Rivne Oblast', 
+                'Sumy Oblast', 'Ternopil Oblast', 'Kharkiv Oblast', 'Kherson Oblast', 
+                'Khmelnytskyi Oblast', 'Cherkasy Oblast', 'Chernivtsi Oblast', 'Chernihiv Oblast', 'Kyiv'
+            ],
+            datasets: [{
+                label: 'GRP',
+                data: [
+                    129097, 75620, 390342, 204893, 85267, 61325, 155158, 86679, 
+                    104452, 73066, 40291, 214400, 92427, 197153, 187289, 67363, 
+                    75827, 57140, 247596, 61939, 83006, 103466, 41660, 77981, 949566
+                ],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        };
+
+        const config = {
+            type: 'bar',
+            data: data1,
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            },
+        };
+
+        const myChart1 = new Chart(
+            document.getElementById('myChart1'),
+            config
+        );
+    </script>
+    </div>
+
+    
+    <div>
+        <div class="chart-container">
+            <select id="dataSelector" onchange="updateChart()">
+                <option value="agri_spec_grp">Agriculture</option>
+                <option value="mining_spec_grp">Mining</option>
+                <option value="posl_spec_grp">Services</option>
+                <option value="industry_spec_grp">Industry</option>
+                <option value="other_spec_grp">Other</option>
+            </select>
+            <canvas id="myChart"></canvas>
+        </div>
+    
+        <script>
+            const data = {
+                labels: [
+                    'Vinnytsia Oblast', 'Volyn Oblast', 'Dnipropetrovsk Oblast', 'Donetsk Oblast', 
+                    'Zhytomyr Oblast', 'Zakarpattia Oblast', 'Zaporizhzhia Oblast', 'Ivano-Frankivsk Oblast', 
+                    'Kyiv Oblast', 'Kirovohrad Oblast', 'Luhansk Oblast', 'Lviv Oblast', 
+                    'Mykolaiv Oblast', 'Odesa Oblast', 'Poltava Oblast', 'Rivne Oblast', 
+                    'Sumy Oblast', 'Ternopil Oblast', 'Kharkiv Oblast', 'Kherson Oblast', 
+                    'Khmelnytskyi Oblast', 'Cherkasy Oblast', 'Chernivtsi Oblast', 'Chernihiv Oblast', 'Kyiv'
+                ],
+                datasets: {
+                    agri_spec_grp: [24.5, 13.9, 6.7, 6.2, 20.6, 13.9, 10.2, 12.4, 12.0, 29.2, 19.6, 8.0, 18.2, 8.4, 14.4, 17.0, 22.8, 22.4, 9.4, 26.9, 25.4, 20.0, 18.0, 24.2, 0.0],
+                    mining_spec_grp: [1.2, 0.1, 20.7, 21.6, 4.7, 0.6, 3.0, 8.6, 0.4, 5.1, 1.9, 5.5, 0.7, 0.0, 31.9, 1.8, 7.4, 1.4, 11.9, 0.3, 0.8, 0.6, 0.4, 4.2, 0.0],
+                    posl_spec_grp: [15.8, 13.0, 20.0, 23.4, 11.5, 9.1, 26.4, 12.7, 20.3, 11.0, 9.4, 11.5, 13.1, 9.6, 9.0, 12.4, 13.5, 10.0, 12.4, 10.2, 10.4, 19.8, 6.1, 12.1, 5.5],
+                    industry_spec_grp: [17.0, 13.1, 40.7, 45.0, 16.2, 9.7, 29.4, 21.3, 25.6, 16.1, 11.3, 17.0, 13.8, 9.6, 42.0, 14.2, 20.9, 11.4, 24.3, 10.5, 11.2, 20.4, 6.5, 16.3, 5.5],
+                    other_spec_grp: [41.5, 59.9, 11.9, 3.8, 47.0, 66.7, 31.0, 45.0, 41.7, 38.6, 57.8, 58.0, 54.2, 72.4, 2.7, 54.6, 35.4, 54.8, 42.0, 52.1, 52.2, 39.2, 69.0, 43.2, 89.0]
+                }
+            };
+    
+            const ctx = document.getElementById('myChart').getContext('2d');
+            let chart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: data.labels,
+                    datasets: [{
+                        label: 'Agriculture',
+                        data: data.datasets.agri_spec_grp,
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+    
+            function updateChart() {
+                const selectedValue = document.getElementById('dataSelector').value;
+                chart.data.datasets[0].data = data.datasets[selectedValue];
+                chart.data.datasets[0].label = document.getElementById('dataSelector').options[document.getElementById('dataSelector').selectedIndex].text;
+                chart.update();
+            }
+        </script>
+    
+    </div>
+
+
+    <Div>
+        <footer class="site-footer">
+            <div class="footer-container">
+                <p class="footer-heading">The Ukrainian Economic believes that great journalism has the power to make each reader's life richer and more fulfilling, and all of society stronger and more just.</p>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Ukrainian Economic All Access</h3>
+                        <ul>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Gift Subscription</a></li>
+                            <li><a href="#">Download App</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Other Subscriptions</h3>
+                        <ul>
+                            <li><a href="#">Group Subscriptions</a></li>
+                            <li><a href="#">Home Delivery</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Ukrainian Economic. <a href="#">Terms of Sale</a> | <a href="#">Privacy Policy</a></p>
+                </div>
+            </div>
+        </footer>
+    </Div>
+
+</body>
+</html>

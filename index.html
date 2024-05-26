@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map with Layers</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-piechart/dist/leaflet-piechart.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    
+</head>
+<body>
+    <header>
+        <div class="wrap-logo">
+            <img src="pictures/main.png" alt="Company Logo" width="75" height="auto" class="logo">
+            <span class="site-title">Ukrainian <br> Economic</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Головна</a>
+            <a href="interestings.html">Цікавинки</a>
+            <a href="regionsanalys.html">Про області</a>
+            <a href="stats.html">Статистика</a>
+        </nav>
+    </header>
+
+    <div id="map-container">
+        <div id="map"></div>
+        <div class="toggle-button" onclick="toggleLegend()">Show Legend</div>
+        <div class="legend">
+            <i style="background: #ff6384"></i>Agriculture<br>
+            <i style="background: #36a2eb"></i>Mining<br>
+            <i style="background: #cc65fe"></i>Services<br>
+            <i style="background: #ffce56"></i>Industry<br>
+            <i style="background: #c9cbcf"></i>Other<br>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search for a location">
+            <button id="search-button">Search</button>
+        </div>
+    
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-piechart/dist/leaflet-piechart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="map.js"></script> <!-- Ссылка на ваш внешний JS файл -->
+    <script src="for_scripts.js"></script> <!-- Второй внешний JS файл -->
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
+    <Div>
+        <footer class="site-footer">
+            <div class="footer-container">
+                <p class="footer-heading">The Ukrainian Economic believes that great journalism has the power to make each reader's life richer and more fulfilling, and all of society stronger and more just.</p>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Ukrainian Economic All Access</h3>
+                        <ul>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Gift Subscription</a></li>
+                            <li><a href="#">Download App</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Other Subscriptions</h3>
+                        <ul>
+                            <li><a href="#">Group Subscriptions</a></li>
+                            <li><a href="#">Home Delivery</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Ukrainian Economic. <a href="#">Terms of Sale</a> | <a href="#">Privacy Policy</a></p>
+                </div>
+            </div>
+        </footer>
+    </Div>
+
+    
+</body>
+</html>

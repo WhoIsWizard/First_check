@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 110vh; /* Задаємо висоту для body */
+  display: flex;
+  flex-direction: column;
+}
+
+.site-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 10px; /* Відступ справа від назви до логотипа */
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #FFEB3B;
+  padding: 20px 10px;
+  font-family: Arial, sans-serif;
+}
+
+.wrap-logo {
+  display: flex;
+  align-items: center;
+}
+
+header a {
+  color: #212121;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+header a:hover {
+  background-color: #FBC02D;
+  color: #212121;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  margin: 0 15px; /* Збільшення відступів зліва і справа кожного елемента */
+}
+
+#map-container {
+  flex: 1 1 auto; /* Задаємо карті займати весь доступний простір */
+  width: 100vw; /* Ширина на всю ширину вікна перегляду */
+  height: 100vh; /* Висота на всю висоту вікна перегляду */
+  border: 1px solid #333;
+  position: relative;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.legend {
+  background: white;
+  line-height: 1.5em;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 100px; /* Позиціонування легенди відносно кнопки */
+  right: 10px; /* Позиціонування легенди відносно кнопки */
+  z-index: 1000;
+  display: none; /* Приховано за замовчуванням */
+}
+
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.7;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 60px; /* Позиціонування кнопки під значком шарів */
+  right: 10px; /* Позиціонування кнопки відносно зазначеного місця */
+  z-index: 1100;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-container {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  z-index: 1100;
+  display: flex;
+  gap: 5px;
+}
+
+#search-input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#search-button {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer Styles */
+.site-footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-heading {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.footer-column h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  font-size: 12px;
+}
+
+.footer-bottom a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
